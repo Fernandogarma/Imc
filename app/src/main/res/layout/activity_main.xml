@@ -11,46 +11,62 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proporcione el peso en kilogramos:"/>
+        android:text="@string/texto_etiqueta_peso"/>
 
     <EditText
+        android:id="@+id/campo_peso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proporcione la estatura en metros:"/>
+        android:text="@string/texto_etiqueta_estatura"/>
 
     <EditText
+        android:id="@+id/campo_estatura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular"/>
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Limpiar"/>
+        <Button
+            android:id="@+id/boton_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_boton_calcular"/>
 
-     </linearLayout>
+        <Button
+            android:id="@+id/boton_limpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_boton_limpiar"/>
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="El Índice de Masa Corporal (IMC) es:"/>
+        android:text="@string/texto_etiqueta_resultado"/>
 
     <TextView
+        android:id="@+id/etiqueta_imc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0.0"/>
 
-</linearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_etiqueta_información"/>
+
+    <TextView
+        android:id="@+id/etiqueta_información"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+</LinearLayout>
